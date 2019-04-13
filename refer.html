@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BIPROTECH Sp. z o.o. - Biuro Projektów Technologicznych</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="194x194" href="icon/favicon-194x194.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="icon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#003268">
+	<meta name="msapplication-TileColor" content="#003268">
+	<meta name="msapplication-TileImage" content="icon/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/wpor.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- test -->
+<body>
+
+    <!-- Pasek nawigacji -->
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <!-- Logo i linki nie do zwinięcia -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+                <a class="navbar-brand" href="index.html">
+                    <p class="capitalic">biprotech</p>
+                </a>
+            </div>
+
+            <!-- Linki, które będą zwinięte-->
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="kontakt.html">Kontakt <span class="sr-only">(current)</span></a></li>
+                    <li><a href="activity.html">Działalność</a></li>
+                    <li><a href="#">Referencje</a></li>
+                </ul>
+                
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Koniec paska nawigacyjnego -->
+
+    <!-- Główny kontener -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p id="logoScenariusz"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <!-- Wybór substancji -->
+                
+                <div class="dropdown separatorTop">
+                    <button class="btn btn-default dropdown-toggle input-block-level form-control" type="button" id="substSelect" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+				    <span class="fa fa-industry"></span> Referencje:
+				    <span class="caret"></span>
+				  </button>
+                    <ul class="dropdown-menu" aria-labelledby="substSelect">
+                        <li><a href="#" onclick="refCert()">Certyfikaty</a></li>
+                        <li><a href="#" onclick="refLists()">Listy referencyjne</a></li>
+                        <li><a href="#" onclick="refReal()">Realizacje</a></li>
+                    </ul>
+                </div>
+                <div class="separator-top"></div>
+            </div>
+            <!-- koniec lewej strony ->>
+            
+            <!-- Właściwości substancji -->
+
+            <div class="col-lg-8 col-md-8 col-sm-8">
+                <div id="substContent">
+                    <div id="scenMapHeader">
+                    <p></p>
+                </div>
+                   <div class="thumbnail">
+                    <img src="img/industry-1.jpg" alt="przykładowa instalacja" id="scenMap">
+                </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/subst.js">
+
+
+        </script>
+
+</body>
+
+</html>
